@@ -1,0 +1,38 @@
+SG7 Data files
+==============
+
+* The data is not accurate at all. It was read using tesseract-ocr.
+* The program is not very structured, or good either.
+
+SG — *Sthuthi Geethangal*, is a Malayalam Christian song book. I have been
+trying to parse the PDF file into a usable form of data for a very long time
+and I finally managed to do that. Leaving the files here.
+
+There is a lot of files in this repository, most of them is not even
+necessary, I know that. But I am not filtering them out now.
+
+* Sthuthigeethangal 7th.pdf
+      original PDF file.
+* data/
+      original images of each page of the PDF
+* cropped_data/
+      cropped versions of the images in data/
+* split_data/
+      cropped images splited into 2 sides.
+* written_data/
+      text versions of the images in split_data/, recognized using
+      tesseract-ocr. some of them are modified using the program.
+* src/
+      program
+* songs_no.json
+      just a useless file I generated containing song numbers with
+      their details and starting point (file)
+* songs/
+      songs. usable! starts with uppercase first letter of the language
+      (M, E, H, K, T), followed by the song number.
+* songs_categorized/
+      mal, eng, hin, kan, tam
+
+related
+* https://github.com/dcdunkan/sg7-api
+* https://github.com/dcdunkan/sg7-bot
